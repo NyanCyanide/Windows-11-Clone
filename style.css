@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-image: url('assets\\images\\windows11.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #0f0e0ed5;
+}
+
+.black-transparent {
+    background-color: #3d3c3cde;
+}
+
+.black-dark-transparent{
+    background-color: #252525b9;
+}
+
+/* .screen-play {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */

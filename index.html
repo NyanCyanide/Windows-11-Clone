@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body class="overflow-hidden h-screen w-screen">
+    <div class="flex flex-row w-screen backdrop-blur-3xl absolute bottom-0 justify-between py-1 z-50 select-none">
+        <div class="flex flex-row items-center  hover:backdrop-blur-2xl hover:bg-slate-800 ml-3 rounded pr-4 py-0.5 select-none duration-500">
+            <div class="pl-3 pr-2">
+                <img src="./assets/Icons/storm.png" alt="storm" class="h-6 w-6">
+            </div>
+            <div class="flex flex-col">
+                <p class="text-white text-[0.8rem]">18&#176;C</p>
+                <p class="text-white text-[0.75rem] ">Thunder Storms</p>
+            </div>
+        </div>
+        <div class="flex flex-row items-center space-x-2 ml-12 ">
+            <div id="windows" class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/windows11.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/stickynotes.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/fileexplorer.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/mail.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/todo.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/vs-code.ico" alt=""   class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/microsoft.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+                <img src="/assets/Icons/spotify.png" alt=""   class="scale-90 h-7 w-7 hover:scale-75 duration-500">
+            </div>
+        </div>
+        <div class="flex flex-row items-center text-white mr-2 select-none">
+            <div class="py-2.5 hover:bg-slate-700 duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                  </svg>
+            </div>
+            <div class="flex flex-col hover:rounded px-3 py-0.5 hover:bg-slate-700 duration-500">
+                <p class="text-[0.75rem]">ENG</p>
+                <p class="text-[0.75rem]">INTL</p>
+            </div>
+            <div class="flex flex-row hover:bg-slate-800 hover:rounded py-3 duration-500">
+                <img src="./assets/Icons/wifi.png" alt="" class="h-4 px-1.5">
+                <img src="./assets/Icons/vloume.png" alt="" class="h-4 px-1.5">
+                <img src="./assets/Icons/full-battery.png" alt="" class="h-4 px-1.5">
+            </div>
+            <div class="flex flex-col text-right pl-2 pr-2 py-0.5 hover:bg-slate-800 hover:rounded duration-500">
+                <p id="time" class="text-[0.75rem]">4:20 PM</p>
+                <p id="date" class="text-[0.75rem]">14 Jun 2022</p>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="bottom-[-40rem] ease-in duration-200  backdrop-blur-lg black-transparent absolute left-0 right-0 max-w-xl max-h-screen mx-auto rounded-xl justify-center select-none drop-shadow-2xl">
+        <div class="pt-6 mx-6">
+            <input class="px-5 py-1.5 text-white bg-zinc-800 w-full border-b-[3px] border-blue-400 rounded outline-none" type="text" placeholder="Type here to search">
+        </div>
+        <div class="mx-6 mt-4 justify-between flex flex-row text-white">
+            <div class="font-semibold tracking-tight mx-5">Pinned</div>
+            <div class="flex flex-row items-center bg-slate-500 hover:bg-slate-400 duration-500 pl-2 rounded mx-5">
+                <p class="text-[0.8rem]">All apps</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 text-center mx-4 mt-3 text-white items-center">
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Edge</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/ms-office.ico" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Office</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/word-icon.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Word</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/excel-icon.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Excel</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/powerpoint-icon.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Powerpoint</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/mail.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Mail</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/calendar-icon.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Calender</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/ms-store-icon.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Microsoft Store</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/Photos.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Photos</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/ms-impostazioni-icon.ico" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Settings</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/Paint-2D.ico" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Paint</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/Xbox.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Xbox</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/spotify.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Spotify</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/todo.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">To Do</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/calc.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Caclulator</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/stickynotes.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Sticky Notes</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/alarm.png" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Clock</p></div>
+            <div class="flex flex-col items-center px-0.5 py-3 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/Paint-3D.ico" alt=""><p class="text-[0.8rem] pt-1.5 font-semibold tracking-tight">Paint 3D</p></div>
+        </div>
+        <div class="mx-6 my-1 justify-between flex flex-row text-white">
+            <div class="font-semibold tracking-tight mx-5">Recommended</div>
+            <div class="flex flex-row items-center bg-slate-500 hover:bg-slate-400 duration-500 pl-2 rounded mx-5">
+                <p class="text-[0.8rem] ">More</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+            </div>
+        </div>
+        <div class="grid mt-4 grid-cols-2 mx-10 gap-x-5 items-center ">
+            <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
+            <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
+            <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
+            <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
+            <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
+            <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
+        </div>
+        <div class="w-full mt-4 black-dark-transparent text-white justify-between flex flex-row rounded rounded-b-xl">
+            <div class="flex flex-row items-center px-2 py-0.5 mx-6 hover:bg-slate-500 duration-500 my-2 rounded ">
+                <img class="h-9 w-9" src="./assets/Icons/usericon.png" alt="">
+              <p class="text-[0.8rem] px-2 font-semibold">Hari Om Swarup S A</p>
+            </div>
+            <div class="items-center flex flex-row mx-12 hover:bg-slate-500 duration-500 my-3 rounded px-2">
+                <img class="h-4 w-4" src="./assets/Icons/power.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!-- <img src="/assets/Icons/windows11.png" alt="" class="scale-90 h-7 hover:scale-75 duration-500"> -->
+<!-- <img src="/assets/Icons/w11widget.png" alt="" class="scale-90 h-7 hover:scale-75 duration-500"> -->
+<!-- <img src="/assets/Icons/vs-code.ico" alt=""   class="scale-90 h-7 hover:scale-75 duration-500"> -->
+<!-- <img src="/assets/Icons/microsoft.png" alt="" class="scale-90 h-7 hover:scale-75 duration-500"> -->
+<!-- <img src="/assets/Icons/spotify.png" alt=""   class="scale-90 h-7 hover:scale-75 duration-500"> -->
