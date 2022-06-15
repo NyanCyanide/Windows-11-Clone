@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows 11</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/Icons/windows11.ico" type="image/icon type">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
-<body class="overflow-hidden h-screen w-screen">
-    <div class="flex flex-row w-screen backdrop-blur-3xl absolute bottom-0 justify-between py-1 z-50 select-none.">
+<!-- Background design -->
+<!-- oncontextmenu="return false;" -->
+<body  class="overflow-hidden h-screen w-screen">
+    <div class="flex flex-row w-screen backdrop-blur-xl absolute bottom-0 justify-between py-1 z-50 select-none.">
         <div class="flex flex-row items-center  hover:backdrop-blur-2xl hover:bg-slate-800 ml-3 rounded pr-4 py-0.5 select-none duration-500">
             <div class="pl-3 pr-2">
                 <img src="./assets/Icons/storm.png" alt="storm" class="h-6 w-6">
@@ -22,33 +25,41 @@
             </div>
         </div>
         <div class="flex flex-row items-center space-x-2 ml-12 ">
-            <div id="windows" class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div id="windows" class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">Windows</p>
                 <img src="./assets/Icons/windows11.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
-            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">Sticky Notes</p>
                 <img src="./assets/Icons/stickynotes.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
-            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">File Explorer</p>
                 <img src="./assets/Icons/fileexplorer.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
-            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">Mail</p>
                 <img src="./assets/Icons/mail.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
-            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">To Do</p>
                 <img src="./assets/Icons/todo.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
-            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">VS Code</p>
                 <img src="./assets/Icons/vs-code.ico" alt=""   class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
-            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">Edge</p>
                 <img src="./assets/Icons/microsoft.png" alt="" class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
-            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded">
+            <div class="hover:bg-slate-600 duration-500 p-1.5 rounded hover:visible">
+                <p class="absolute bottom-14 white-light-transparent text-[0.8rem] invisible text-white px-2 py-1 rounded">Spotify</p>
                 <img src="./assets/Icons/spotify.png" alt=""   class="scale-90 h-7 w-7 hover:scale-75 duration-500">
             </div>
         </div>
         <div class="flex flex-row items-center text-white mr-2 select-none">
-            <div class="py-2.5 hover:bg-slate-700 duration-500">
+            <div id="appshow" class="py-2.5 hover:bg-slate-700 duration-500">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
                   </svg>
@@ -57,18 +68,70 @@
                 <p class="text-[0.75rem]">ENG</p>
                 <p class="text-[0.75rem]">INTL</p>
             </div>
-            <div class="flex flex-row hover:bg-slate-800 hover:rounded py-3 duration-500">
+            <div id="wvb" class="flex flex-row hover:bg-slate-800 hover:rounded py-3 duration-500">
                 <img src="./assets/Icons/wifi.png" alt="" class="h-4 px-1.5">
                 <img src="./assets/Icons/vloume.png" alt="" class="h-4 px-1.5">
                 <img src="./assets/Icons/full-battery.png" alt="" class="h-4 px-1.5">
             </div>
             <div class="flex flex-col text-right pl-2 pr-2 py-0.5 hover:bg-slate-800 hover:rounded duration-500">
-                <p id="time" class="text-[0.75rem]">4:20 PM</p>
-                <p id="date" class="text-[0.75rem]">14 Jun 2022</p>
+                <p id="time" class="text-[0.75rem]">12:00 AM</p>
+                <p id="date" class="text-[0.75rem]">Jun 15 2022</p>
             </div>
         </div>
     </div>
-    <div id="menu" class="bottom-[-40rem] ease-in duration-200  backdrop-blur-lg black-transparent absolute left-0 right-0 max-w-xl max-h-screen mx-auto rounded-xl justify-center select-none drop-shadow-2xl">
+
+    <!-- Arrow Icon element -->
+    <div id="apps" class="grid grid-cols-2 invisible bg-zinc-800 absolute bottom-16 right-48 rounded text-white">
+            <div class="p-3 hover:bg-zinc-700 duration-300"><img class="h-4 w-4" src="./assets/Icons/windows-security-icon.png" alt=""></div>
+            <div class="p-3 hover:bg-zinc-700 duration-300"><img class="h-4 w-4" src="./assets/Icons/nvidia.png" alt=""></div>
+            <div class="p-3 hover:bg-zinc-700 duration-300"><img class="h-4 w-4" src="./assets/Icons/macfee.png" alt=""></div>
+    </div>
+
+    <!-- Volume, battery, wifi, etc. -->
+    <div id="wvbmenu" class="black-transparent backdrop-blur-lg w-1/4 absolute bottom-16 -right-96 duration-300 ease-in-out rounded-xl items-center select-none">
+        <div class="grid grid-cols-3 items-center justify-center mt-10 mx-6 gap-x-2 gap-y-4 text-white">
+            <div class="flex flex-col items-center"><div class="bg-sky-400 duration-500 px-10 py-4 rounded-md"><img class="h-4 w-4" src="./assets/Icons/wifi.png" alt=""></div><p class="text-[0.75rem] p-2">Wifi</p></div>
+            <div class="flex flex-col items-center"><div class="white-transparent hover:bg-sky-600 duration-500 px-10 py-4 rounded-md"><img class="h-4 w-4" src="./assets/Icons/bluetooth.png" alt=""></div><p class="text-[0.75rem] p-2">Bluetooth</p></div>
+            <div class="flex flex-col items-center"><div class="white-transparent hover:bg-sky-600 duration-500 px-10 py-4 rounded-md"><img class="h-4 w-4" src="./assets/Icons/flight.png" alt=""></div><p class="text-[0.75rem] p-2">Flight mode</p></div>
+            <div class="flex flex-col items-center"><div class="white-transparent hover:bg-sky-600 duration-500 px-10 py-4 rounded-md"><img class="h-4 w-4" src="./assets/Icons/keyboard.png" alt=""></div><p class="text-[0.75rem] p-2">Keyboard layout</p></div>
+            <!-- <div class="flex flex-col items-center"><div class="white-transparent hover:bg-sky-600 duration-500 px-10 py-4 rounded-md"><img class="h-4 w-4" src="./assets/Icons/settingsinco.png" alt=""></div><p class="text-[0.75rem] p-2">Settings</p></div> -->
+            <div class="flex flex-col items-center"><div class="white-transparent hover:bg-sky-600 duration-500 px-10 py-4 rounded-md"><img class="h-4 w-4" src="./assets/Icons/focus.png" alt=""></div><p class="text-[0.75rem] p-2">Focus assist</p></div>
+        </div>
+        <div class="flex flex-row items-center justify-center my-5">
+            <div class="mr-4 ml-8 items-center">
+                <img class="h-4 w-5" src="./assets/Icons/vloume.png" alt="">
+            </div>
+            <div class="w-full mr-8 items-center">
+                <input class="w-full hover:bg-white slider" type="range" min="1" max="100" value="50">
+            </div>
+        </div>
+        <div class="flex flex-row items-center justify-center my-7">
+            <div class="mr-4 ml-8 items-center">
+                <img class="h-4 w-5" src="./assets/Icons/brightness.png" alt="">
+            </div>
+            <div class="w-full mr-8 items-center">
+                <input class="w-full bg-black slider" type="range" min="1" max="100" value="50">
+            </div>
+        </div>
+        <div class="black-dark-transparent backdrop-blur-xl rounded-b-lg flex flex-row justify-between pl-6 pr-6 items-center">
+            <div class="flex flex-row items-center my-3 hover:bg-slate-400 rounded px-2 py-1 duration-500">
+                <img class="h-4" src="./assets/Icons/full-battery.png" alt="">
+                <p id="batteryper" class="text-white text-[0.8rem] pl-1">100%</p>
+            </div>
+            <div class="flex flex-row px-1">
+                <div class="mr-4 rounded-lg duration-500 hover:bg-slate-400 p-2">
+                    <img class="h-4 " src="./assets/Icons/pen.png" alt="">
+                </div>
+                <div class="hover:bg-slate-400 p-2 rounded-lg duration-500">
+                    <img class="h-4" src="./assets/Icons/settingsinco.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Windows Menu Bar -->
+    <div id="menu" class=" bottom-[-40rem] ease-in-out duration-200  backdrop-blur-lg white-transparent absolute left-0 right-0 max-w-xl max-h-screen mx-auto rounded-xl justify-center select-none drop-shadow-2xl">
         <div class="pt-6 mx-6">
             <input class="px-5 py-1.5 text-white bg-zinc-800 w-full border-b-[3px] border-blue-400 rounded outline-none" type="text" placeholder="Type here to search">
         </div>
@@ -118,7 +181,7 @@
             <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
             <div class="flex flex-row py-2 px-2 hover:bg-slate-500 rounded duration-500"><img class="h-8 w-8" src="./assets/Icons/microsoft.png" alt=""><div class="flex flex-col leading-tight  pl-4"><p class="font-semibold text-[0.8rem] text-white">Photos</p><p class="text-[0.75rem] text-slate-200">Opened Recently</p></div></div>
         </div>
-        <div class="w-full mt-4 black-dark-transparent text-white justify-between flex flex-row rounded rounded-b-xl">
+        <div class="w-full mt-4 white-light-transparent text-white justify-between flex flex-row rounded rounded-b-xl">
             <div class="flex flex-row items-center px-2 py-0.5 mx-6 hover:bg-slate-500 duration-500 my-2 rounded ">
                 <img class="h-9 w-9" src="./assets/Icons/usericon.png" alt="">
               <p class="text-[0.8rem] px-2 font-semibold">Hari Om Swarup S A</p>

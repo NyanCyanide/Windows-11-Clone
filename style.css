@@ -13,16 +13,17 @@ body {
 }
 
 .black-transparent {
-    background-color: #3d3c3cde;
+    background-color: #3d3c3c9a;
 }
 
 .black-dark-transparent{
-    background-color: #252525b9;
+    background-color: #25252581;
 }
 
-/* .screen-play {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-} */
+.white-transparent {
+    background-color: #5f5f5f7e;
+}
+
+.white-light-transparent{
+    background-color: #0c0c0c5e;
+}
