@@ -1,5 +1,3 @@
-# Windows-11-Clone
-A look and feel for non-Windows11 users to try Windows 11
 # Windows 11 Clone
 Using my front-end designing skills and using [Tailwind CSS](https://tailwindcss.com/docs/installation) framework, I have tried to clone Windows 11, though I have created late from the release😅, this is a trial for all Linux and Mac OS Users how Windows 11 is Cool
 Check Here to view [Windows 11](https://nyancyanide.github.io/Windows-11-Clone/)
