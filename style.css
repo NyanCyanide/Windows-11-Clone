@@ -3,27 +3,31 @@
 @tailwind utilities;
 
 
-body {
-    background-image: url('assets\\images\\windows11.jpeg');
+body{
+    background-image: url('./assets/images/windows11.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: #0f0e0ed5;
+    background-color: black;
 }
 
-.black-transparent {
-    background-color: #3d3c3c9a;
-}
-
-.black-dark-transparent{
-    background-color: #25252581;
-}
-
-.white-transparent {
-    background-color: #5f5f5f7e;
-}
-
-.white-light-transparent{
-    background-color: #0c0c0c5e;
-}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(190, 190, 190);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
