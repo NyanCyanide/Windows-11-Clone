@@ -940,7 +940,7 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
-  background-image: url(/assets/images/windows11.jpeg);
+  background-image: url('./assets/images/windows11.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
