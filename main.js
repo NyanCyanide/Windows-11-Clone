@@ -117,7 +117,7 @@ const p = [
     },
     {
       id: "paint2d-icon",
-      src: "./assets/Apps/paint2D.ico",
+      src: "./assets/Apps/paint2d.ico",
       alt: "app-icons",
       title: "Paint 2D",
     },
