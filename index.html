@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/Apps/windows11.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Windows 11</title>
   </head>
   <body class="h-screen w-screen overflow-hidden">
@@ -16,7 +16,7 @@
         id="weatherpress"
         class="flex flex-row items-center hover:bg-white-transparent ml-3 rounded py-0.5 select-none duration-500"
       >
-      <!-- <img class="h-6 w-6" src="./assets/Apps/widget.png" alt=""> -->
+        <!-- <img class="h-6 w-6" src="./assets/Apps/widget.png" alt=""> -->
         <!-- <div class="pl-3 pr-2">
           <img src="./assets/Weather/1163626.png" alt="" class="h-6 w-6" />
         </div>
@@ -27,7 +27,7 @@
       </div>
       <div
         id="taskbar-icons"
-        class="flex flex-row items-center space-x-2 ml-12"
+        class="flex flex-row items-center space-x-2 ml-36"
       ></div>
       <div class="flex flex-row items-center text-white mr-2 select-none">
         <div
@@ -50,6 +50,7 @@
           </svg>
         </div>
         <div
+          id="keyeng"
           class="flex flex-col rounded px-3 py-0.5 hover:bg-white-transparent duration-500"
         >
           <p class="text-[0.75rem]">ENG</p>
@@ -68,6 +69,7 @@
           />
         </div>
         <div
+        id="notific"
           class="flex flex-col text-right pl-2 pr-2 py-0.5 hover:bg-white-transparent rounded duration-500"
         >
           <p id="time" class="text-[0.75rem]">12:00 AM</p>
@@ -325,10 +327,10 @@
       </div>
     </div>
 
-    <!-- Right API Element -->
+    <!-- Left API Element -->
     <div
       id="leftapi"
-      class="text-white overflow-hidden ease-in-out duration-300 bg-white-transparent backdrop-blur-lg w-2/5 max-h-[90vh] absolute bottom-14 left-[-40rem] rounded-xl"
+      class="text-white overflow-hidden ease-in-out duration-300 bg-white-transparent backdrop-blur-lg w-2/5 max-h-[90vh] absolute bottom-14 select-none left-[-40rem] rounded-xl"
     >
       <div class="flex flex-row flex-end justify-between items-end py-1">
         <div></div>
@@ -364,10 +366,115 @@
           placeholder="Type here to search"
         />
       </div>
-      <div class="overflow-y-scroll h-[83vh] mb-10">
+      <div class="overflow-y-scroll h-[75vh] mb-10">
         <div id="news-api" class="mx-5 grid grid-cols-2 gap-4 mt-5 mb-10"></div>
       </div>
     </div>
+
+    <!-- Desktop -->
+    <div
+      class="grid grid-rows-2 gap-y-2 text-white font-semibold ml-2 mt-4 select-none"
+    >
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/Trash.png" alt="" />
+        <p class="text-[0.8rem] text-center">Recycle Bin</p>
+      </div>
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/PC.png" alt="" />
+        <p class="text-[0.8rem] text-center">My Computer</p>
+      </div>
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/ScreenSaver.png" alt="" />
+        <p class="text-[0.8rem] text-center">Screen Saver</p>
+      </div>
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/Onedrive.png" alt="" />
+        <p class="text-[0.8rem] text-center">One Drive</p>
+      </div>
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/Contacts.png" alt="" />
+        <p class="text-[0.8rem] text-center">Contacts</p>
+      </div>
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/desktop.png" alt="" />
+        <p class="text-[0.8rem] text-center">Desktop</p>
+      </div>
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/Music.png" alt="" />
+        <p class="text-[0.8rem] text-center">Music</p>
+      </div>
+      <div
+        class="w-24 rounded flex flex-col items-center hover:bg-white-transparent duration-300 p-1"
+      >
+        <img class="" src="./assets/Desktop/Videos.png" alt="" />
+        <p class="text-[0.8rem] text-center">Videos</p>
+      </div>
+    </div>
+
+    <!-- Keyboard Layout -->
+    <div
+      id="keylayout"
+      class="text-white select-none absolute duration-300 ease-in-out backdrop-blur-lg right-3 -bottom-52 bg-white-transparent rounded-lg"
+    >
+      <div class="text-sm my-3 ml-5">Keyboard layout</div>
+      <div
+        class="flex border-2 border-white duration-500 rounded flex-row hover:bg-white-dark-transparent"
+      >
+        <div><p class="text-[0.8rem] text-center px-4 pt-1">ENG</p></div>
+        <div class="py-1 pr-32">
+          <p class="text-[0.9rem]">English (United Kingdom)</p>
+          <p class="text-[0.75rem]">United States-International</p>
+        </div>
+      </div>
+      <div
+        class="flex rounded flex-row duration-500 hover:bg-white-dark-transparent"
+      >
+        <div><p class="text-[0.8rem] text-center px-4 pt-1">ENG</p></div>
+        <div class="py-1 pr-32">
+          <p class="text-[0.9rem]">English (India)</p>
+          <p class="text-[0.75rem]">English (India)</p>
+        </div>
+      </div>
+      <div class="bg-black-dark-transparent text-[0.75rem] py-4">
+        <p class="ml-5">More keyboard settings</p>
+      </div>
+    </div>
+
+    <!-- Notifications -->
+    <div
+    id="notificationbar"
+      class="select-none absolute duration-300 ease-in-out -right-80 bottom-16 text-white rounded-lg backdrop-blur-sm"
+    >
+      <div
+        class="bg-white-dark-transparent items-center py-3 rounded-t-lg pl-5 justify-between flex flex-row"
+      >
+        <p class="text-sm">Notification</p>
+        <p class="font-semibold tracking-tight mx-5 text-[0.75rem] duration-500 bg-white-transparent hover:bg-slate-400 p-1 rounded">Clear all</p>
+      </div>
+      <p class="bg-white-transparent text-[0.9rem] pl-5 pr-20 pt-3">
+        Developer
+      </p>
+      <p
+        class="bg-white-transparent text-[0.8rem] pl-5 pr-20 pb-3 rounded-b-lg"
+      >
+        Click around and explore yourself 😏
+      </p>
+    </div>
+
   </body>
   <script src="./main.js"></script>
 </html>
